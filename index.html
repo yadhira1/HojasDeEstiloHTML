@@ -2,58 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hojas de estilos</title>
-    <style>
-p.dotted{
-    border-style: dotted;
-}
-p.dashed{border-style:dashed}
-p.solid{border-style:solid}
-p.double{border-style:double}
-p.groove{border-style:groove}
-p.ridge{border-style:ridge}
-p.inset{border-style:inset}
-p.outset{border-style:outset}
-p.none{border-style:none}
-p.hidden{border-style:hidden}
-p.mix{border-style:dashed solid double}
-
-p.uno{border-style:double;
-border-width:5px 8px 10px 3px;
-    border-color: #E579F5;
-}
-
-p.dos{border-style:dashed solid dashed solid;
-border-width:thick,
-}
-
-p.tres{border-style:dotted;
-border-width: 2px}
-
-p.cua{border-style:dashed;
-border-width:thick}
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador Freelancer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p class="dotted"> A dotted border </p>
-<p class="dashed"> A dashed border </p>
-<p class="solid"> A solid border </p>
-<p class="double"> A double border </p>
-<p class="groove"> A groove border </p>
-<p class="ridge"> A ridge border </p>
-<p class="inset"> A inset border </p>
-<p class="outset"> A outset border </p>
-<p class="none"> A none border </p>
-<p class="hidden"> A hidden border </p>
-<p class="mix"> A mix border </p>
+    <header>
+        <h1 class="titulo">Yadhira Marmolejo <span>Freelancer</span></h1>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contactos </a>
+        </nav>
+    </div>
+    <!--indica la ubicacion principal-->
+    <section class="lluvia">
+        <div class="contenedor-lluvia">
+            <h2>Diseño y Desarrollo Web<span>Freelancer</span></h2>
+        </div class="ubicacion">
+            ubicacion 
+        </div>
+        <a href="#">Contactar</a>
 
-
-<p class="uno">uno</p>
-<p class="dos">dos</p>
-<p class="tres">tres</p>
-<p class="tres">cuatro</p>
-
-
+    </section>
+    <main class="contenedor sombra">
+        <h2>Servicios</h2>
+        <div class="Servicios"> 
+            <section class="Servicios">
+            <h3>Diseño Web</h3>
+            <div class="icono">
+                Diseño Web
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </section>
+        <section>
+            <h3>Aplicaciones Web</h3>
+            <div class="icono"></div>
+                Android
+                apple
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </section>
+        <section class="Servicios">
+            <h3>E-Commerce</h3>
+            <div class="Servicios">
+                E-Commerce
+            </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        </section>
+        <section>
+            <h3>Contacto</h3>
+           <form action="" class="formulario">
+            <fieldset>
+                <legend>Contactanos rellenando este formulario</legend>
+                <div class="contenedor-campos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="ingresa tu nombre" >
+                </div>
+                <div class="campo">
+                        <label for="Telefono">Telefono</label>
+                        <input type="tel" placeholder="ingresa tu numero">
+                    </div>
+                    <div class="campo">
+                    <label for="Correo">Correo</label>
+                    <input type="email" placeholder="ingresa tu correo">
+                </div>
+                <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="mensaje admite 3000 caracteres"></textarea>
+                </div>
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="enviar">
+                </div>
+            </fieldset>
+           </form>
+        </section>
+    </div>
+    </main>
+    <footer class="footer">
+        Todos los derechos reservados. Yadhira Sara Marmolejo 
+    </footer>
 </body>
 </html>
